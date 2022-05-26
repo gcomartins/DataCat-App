@@ -5,7 +5,7 @@ FROM openjdk:11
 ADD app/ AplicacaoScanner.jar
 MAINTAINER Larissa
 WORKDIR /data-cat/
-COPY  app/*.jar /data-cat/app.jar
+COPY  appAntigo/*.jar /data-cat/appAntigo.jar
 RUN ["java","-jar","appAntigo.jar"]
 ENTRYPOINT java -jar app.jar
 
