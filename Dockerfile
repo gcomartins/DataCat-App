@@ -6,8 +6,7 @@ ADD app/ AplicacaoScanner.jar
 MAINTAINER Larissa
 WORKDIR /data-cat/
 COPY  app/*.jar /data-cat/app.jar
-RUN ["java","-jar","appgit.jar"]
+RUN ["java","-jar","app.jar"]
 ENTRYPOINT java -jar app.jar
-
 
 
