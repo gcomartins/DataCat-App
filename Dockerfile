@@ -2,10 +2,10 @@
 # Author: Larissa
 
 FROM openjdk:11
-ADD app-scanner/ AplicacaoScanner.jar
+ADD appCLI/ AplicacaoScanner.jar
 MAINTAINER Larissa
 WORKDIR /data-cat/
-COPY  app-scanner/*.jar /data-cat/app-scanner.jar
-ENTRYPOINT java -jar app-scanner.jar
+COPY  appCLI/*.jar /data-cat/appCLI.jar
+ENTRYPOINT java -jar appCLI.jar
 
 
